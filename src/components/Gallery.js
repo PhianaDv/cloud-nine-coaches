@@ -8,22 +8,22 @@ const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export default function Gallery() {
   const items = [
-    { type: 'image', src: `${prefix}/CNC1.jpg`, alt: 'Limo side view' },
-    { type: 'image', src: `${prefix}/CNC2.jpg`, alt: 'Luxury Interior' },
-    { type: 'image', src: `${prefix}/CNC4.jpg`, alt: 'Cloud Nine Coaches at Yorkton Parade' },
-    { type: 'image', src: `${prefix}/CNC7.jpg`, alt: 'Special Occasion' },
+    { type: 'image', src: `/cloud-nine-coaches/CNC1.jpg`, alt: 'Limo side view' },
+    { type: 'image', src: `/cloud-nine-coaches/CNC2.jpg`, alt: 'Luxury Interior' },
+    { type: 'image', src: `/cloud-nine-coaches/CNC4.jpg`, alt: 'Cloud Nine Coaches at Yorkton Parade' },
+    { type: 'image', src: `/cloud-nine-coaches/CNC7.jpg`, alt: 'Special Occasion' },
     {
       type: 'facebook',
       src: 'https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F946402410522543%2F&show_text=false&width=267&t=0',
       alt: 'Facebook Reel',
-      thumbnail: `${prefix}/CNCthumbnail.jpg`,
+      thumbnail: `/cloud-nine-coaches/CNCthumbnail.jpg`,
     },
-    { type: 'image', src: `${prefix}/CNC3.jpg`, alt: 'Driver Opening Door' },
-    { type: 'image', src: `${prefix}/CNC6.jpg`, alt: 'Birthday bunch' },
-    { type: 'image', src: `${prefix}/CNC8.jpg`, alt: "Mother's Day" },
-    { type: 'image', src: `${prefix}/CNCBanner.jpg`, alt: "Wedding" },
-    { type: 'image', src: `${prefix}/CNC9.jpg`, alt: "Let's make wine!" },
-    { type: 'image', src: `${prefix}/CNC5.jpg`, alt: "Girl's night out" },
+    { type: 'image', src: `/cloud-nine-coaches/CNC3.jpg`, alt: 'Driver Opening Door' },
+    { type: 'image', src: `/cloud-nine-coaches/CNC6.jpg`, alt: 'Birthday bunch' },
+    { type: 'image', src: `/cloud-nine-coaches/CNC8.jpg`, alt: "Mother's Day" },
+    { type: 'image', src: `/cloud-nine-coaches/CNCBanner.jpg`, alt: "Wedding" },
+    { type: 'image', src: `/cloud-nine-coaches/CNC9.jpg`, alt: "Let's make wine!" },
+    { type: 'image', src: `/cloud-nine-coaches/CNC5.jpg`, alt: "Girl's night out" },
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(null);

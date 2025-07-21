@@ -1,9 +1,12 @@
 'use client'
 import Link from 'next/link'
 import SVGLogoLeft from './SVGLogoLeft'
-import SVGLogoRight from './SVGLogoRight'
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
+
+  const rawPath = usePathname()
+  const pathname = rawPath.replace(/\/$/, '') || '/'
   return (
     <nav className="fixed w-full bg-black text-[#c4bc91] px-4 py-2 z-50 shadow-md">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
@@ -33,11 +36,21 @@ export default function Navbar() {
             { label: 'Gallery', href: '/gallery' },
             { label: 'Testimonials', href: '/testimonials' },
             { label: 'Contact', href: '/contact' },
-          ].map((item, i) => (
-            <div key={i} className="px-4 hover:underline">
-              <Link href={item.href}>{item.label}</Link>
+          ].map((item, i) => {
+            const isActive = pathname === item.href
+            return (
+
+              <div key={i} className="px-4 hover:underline">
+              <Link href={item.href}
+              className={`px-4 flex items-center ${
+                  isActive
+                    ? 'underline'
+                    : ''
+                }`}>{item.label}</Link>
             </div>
-          ))}
+            )
+            
+})}
         </div>
       </div>
     </nav>
