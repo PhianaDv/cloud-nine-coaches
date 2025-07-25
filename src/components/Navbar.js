@@ -26,7 +26,7 @@ export default function Navbar() {
 
         {/* Navigation (right on desktop, centered horizontal row on mobile) */}
         <div
-          className="mt-2 md:mt-1 flex justify-center md:justify-end text-[1.3rem] md:text-[1.5rem] divide-x divide-white/40"
+          className="mt-2 md:mt-1 flex justify-center md:justify-end text-[1.3rem] divide-x divide-white/40"
           style={{
             fontFamily: 'Lavanderia-Sturdy',
           }}
@@ -40,7 +40,7 @@ export default function Navbar() {
             const isActive = pathname === item.href
             return (
 
-              <div key={i} className="px-4 hover:underline">
+              <div key={i} className="hover:underline">
               <Link href={item.href}
               className={`px-4 flex items-center ${
                   isActive
