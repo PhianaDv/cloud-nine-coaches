@@ -22,19 +22,19 @@ export default function Home() {
       <section className="text-left max-w-4xl mx-auto space-y-4">
         <h2 className="text-2xl font-semibold">What We&apos;ve Been Up To</h2>
         <ul className="list-disc pl-6 text-left">
-          <li>🎄 CP Holiday Train event — Thanks to Tourism Yorkton and Randy Goulden for including us!</li>
-          <li>🎉 Yorkton Parade was a hit — thank you to everyone who turned out!</li>
-          <li>🍷 Bottle night? We&apos;ll pick you up from <strong>Let&apos;s Make Wine Yorkton</strong> in style.</li>
-          <li>💃 Girls night out or your next birthday? Call or text <strong>(306) 641-4724</strong> and we&apos;ll handle the ride!</li>
-          <li>🛹 Supported local events like Go Skateboarding Day — we love our community!</li>
-          <li>🎉 Community got to visit our 14-passenger Ford Excursion stretch limousine inside Flexi Hall at the show on April 6th, 2025!</li>
+          <li>CP Holiday Train event — Thanks to Tourism Yorkton and Randy Goulden for including us!</li>
+          <li>Yorkton Parade was a hit — thank you to everyone who turned out!</li>
+          <li>Event or day out at <strong>Rawhides</strong>? We&apos;ll pick you up in style.</li>
+          <li>Girls night out or your next birthday? Call or text <strong>(306) 641-4724</strong> and we&apos;ll handle the ride!</li>
+          <li>Supported local events like Go Skateboarding Day — we love our community!</li>
+          <li>Community got to visit our 14-passenger Ford Excursion stretch limousine inside Flexi Hall at the <strong>bridal</strong> show on April 6th, 2025!</li>
         </ul>
       </section>
 
       {/* Contact CTA */}
       <section className="bg-black/90 text-white p-6 rounded shadow max-w-4xl mx-auto text-center">
         <h2 className="text-2xl font-bold mb-2">Ready to Ride?</h2>
-        <p className="mb-4">Call or text <strong>(306) 641-4724</strong> or <strong>(306) 620-9718</strong> to reserve your luxury limo today.</p>
+        <p className="mb-4">Call or text <strong>(306) 641-4724</strong> to reserve your luxury limo today.</p>
         <Link href="/contact" legacyBehavior>
           <a
             className="inline-block bg-white text-black font-semibold py-2 px-5 rounded hover:bg-[#c4bc91] hover:text-white transition"

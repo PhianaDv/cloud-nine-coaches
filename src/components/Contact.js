@@ -60,10 +60,7 @@ export default function Contact() {
       </div>
 
       {/* Optional second number */}
-      <div className="text-sm text-black/70 mt-4">
-        You can also reach us at <strong>(306) 620-9718</strong> for event coordination.
-      </div>
-
+      
       <p className="text-sm text-black/50">Hwy 52 West, Yorkton, Saskatchewan</p>
 
       {/* Contact Form */}
