@@ -65,7 +65,7 @@ export default function Gallery() {
                 alt={item.alt}
                 width={400}
                 height={300}
-                className="rounded w-full h-auto object-cover"
+                className="rounded object-contain max-h-[100vh] mx-auto"
               />
             ) : item.type === 'facebook' ? (
               <>
@@ -74,7 +74,7 @@ export default function Gallery() {
                   alt={`${item.alt} thumbnail`}
                   width={400}
                   height={300}
-                  className="rounded w-full h-auto object-cover"
+                  className="rounded object-contain max-h-[100vh] mx-auto"
                 />
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <svg
