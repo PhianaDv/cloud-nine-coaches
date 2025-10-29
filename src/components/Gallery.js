@@ -50,11 +50,11 @@ export default function Gallery() {
 
   return (
     <section className="p-4 md:p-8 max-w-screen-xl mx-auto">
-      <h2 className="text-2xl md:text-4xl font-semibold text-center mb-6">Gallery</h2>
+      <h2 className="text-2xl md:text-4xl font-semibold text-center mb-6 py-2">Gallery</h2>
 
       <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
         {items.map((item, i) => (
-          <div
+         <div
             key={i}
             className="relative cursor-pointer hover:scale-105 transition-transform duration-300 rounded overflow-hidden shadow-md"
             onClick={() => setSelectedIndex(i)}
@@ -65,8 +65,9 @@ export default function Gallery() {
                 alt={item.alt}
                 width={400}
                 height={300}
-                className="rounded object-contain max-h-[100vh] mx-auto"
+                className="rounded w-full h-auto object-cover"
               />
+          
             ) : item.type === 'facebook' ? (
               <>
                 <Image
@@ -135,12 +136,12 @@ export default function Gallery() {
               </button>
 
               {selected.type === 'image' ? (
-                <Image
+               <Image
                   src={selected.src}
                   alt={selected.alt}
                   width={1000}
                   height={700}
-                  className="rounded w-full h-auto object-contain"
+                  className="rounded object-contain max-h-[98vh] mx-auto"
                 />
               ) : selected.type === 'facebook' ? (
                 <iframe
